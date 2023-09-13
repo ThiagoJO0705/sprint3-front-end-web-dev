@@ -16,13 +16,13 @@ html {
     --cor-texto-fundo-branco: black;
     --cor-verde: green;
     --cor-rosa: rgb(218, 101, 101);
-    --cor-linnha: #9c9b9b;
+    --cor-linha: #9c9b9b;
 }
 
 .container-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(20,170px);
+    grid-template-rows: repeat(30,170px);
 }
 
 /* CABEÇALHO */
@@ -185,12 +185,11 @@ main {
 
 .linha1 {
     width: 100%;
-    background-color: #9c9b9b;
+    background-color: var(--cor-linha);
     height: 1px;
     grid-row: 9;
     grid-column: 2/9;
     margin-top: 12rem;
-
 }
 
 /* SOLUÇÃO */
@@ -337,9 +336,51 @@ main {
 
 .linha2 {
     width: 100%;
-    background-color: #9c9b9b;
+    background-color: var(--cor-linha);
     height: 1px;
     grid-row: 16;
+    grid-column: 2/9;
+    margin-top: 5rem;
+}
+
+/* DEMONSTRAÇÃO */
+.demonstracao {
+    grid-column: 1/13;
+    grid-row: 17;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.container-demonstracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.container-demonstracao h1{
+    font-size: 5rem;
+}
+
+.container-demonstracao h2{
+    font-size: 2.5rem;
+    text-align: center;
+    width: 150rem;
+}
+
+.video-yt {
+    width: 110rem;
+    height: 60rem;
+}
+
+.linha3 {
+    width: 100%;
+    background-color: var(--cor-linha);
+    height: 1px;
+    grid-row: 22;
     grid-column: 2/9;
     margin-top: 5rem;
 }
