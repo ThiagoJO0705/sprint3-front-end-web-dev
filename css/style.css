@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --cor-texto: white;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(12 100px);
+    grid-template-rows: auto;
+}
+
+header {
+    columns: 1/13;
+    grid-row: 1/2;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    padding: 3rem;
+    list-style: none;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+header h1 {
+    color: var(--cor-texto);
+    font-size: 5rem;
+}
