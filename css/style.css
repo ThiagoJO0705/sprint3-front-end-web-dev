@@ -198,7 +198,7 @@ main {
     display: flex;
     margin: 7rem 0 0 2rem;
     grid-column: 1/13;
-    grid-row: 10;
+    grid-row: 10/16;
     gap: 10rem;
     display: flex;
 }
@@ -346,7 +346,7 @@ main {
 /* DEMONSTRAÇÃO */
 .demonstracao {
     grid-column: 1/13;
-    grid-row: 17;
+    grid-row: 17/21;
     display: flex;
     justify-content: center;
 
@@ -383,4 +383,11 @@ main {
     grid-row: 22;
     grid-column: 2/9;
     margin-top: 5rem;
+}
+
+/* VANTAGENS */
+
+.vantagens {
+    grid-column: 1/13;
+    grid-row: 23;
 }
