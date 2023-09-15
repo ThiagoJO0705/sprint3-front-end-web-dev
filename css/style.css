@@ -23,10 +23,10 @@ html {
 .container-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(26,170px);
+    grid-template-rows: repeat(26, 170px);
 }
 
-/* CABEÇALHO */
+/* =========================================CABEÇALHO ====================================*/
 
 header {
     grid-column: 1/13;
@@ -37,24 +37,24 @@ header {
     color: var(--cor-texto-fundo-preto);
 }
 
-nav {
+#menu-desktop {
     display: flex;
     justify-content: right;
     margin-top: 9rem;
 }
 
-nav ul {
+#menu-desktop ul {
     display: flex;
     list-style: none;
 
 }
-nav ul li {
+#menu-desktop ul li {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-nav ul li a {
+#menu-desktop ul li a {
     padding: 2.5rem;
     list-style: none;
     font-size: 2rem;
@@ -64,13 +64,21 @@ nav ul li a {
     
 }
 
-nav ul li a:hover {
+#menu-desktop ul li a:hover {
     background-color: #3a3a3a;
+}
+
+#menu-mobile{
+    display: none;
 }
 
 #titulo-cabecalho{
     color: var(--cor-texto);
     font-size: 4.5rem;
+}
+
+#titulo-cabecalho-mobile{
+    display: none;
 }
 
 #logo-cabecalho {
@@ -80,7 +88,7 @@ nav ul li a:hover {
 }
 
 
-/* HOME */
+/* ==============================================HOME============================== */
 
 .containeir-home {
     background-image: url(../img/smart-cities.png);
@@ -132,7 +140,7 @@ main {
     transition: 0.2s;
 }
 
-/* PROBLEMA */
+/* ==================================PROBLEMA========================= */
 .problema {
     display: flex;
     margin: 7rem 0 0 2rem;
@@ -176,7 +184,7 @@ main {
     gap: 2rem;
 }
 
-.fundo-problema li {
+.fundo-problema ul li {
     font-size: 2rem;
     padding-right: 2rem;
     text-align: justify;
@@ -193,7 +201,7 @@ main {
     margin-top: 12rem;
 }
 
-/* SOLUÇÃO */
+/* =====================================SOLUÇÃO====================== */
 
 .solucao {
     display: flex;
@@ -238,6 +246,7 @@ main {
     border: 2px solid var(--cor-verde);
     border-radius: 2rem;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -249,6 +258,7 @@ main {
     padding: 0 2rem 0 2rem;
     margin-top: -3rem;
     font-size: 2.5rem;
+    font-weight: lighter;
 }
 
 .box-numero {
@@ -259,6 +269,17 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: -3.3rem;
+    left: -23rem;
+}
+
+#numero1{
+    top: -6.9rem;
+}
+
+#box-numero4{
+    top: -5rem;
 }
 
 .numero {
@@ -267,10 +288,11 @@ main {
 }
 
 .titulo-quadrado {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    margin-top: -10rem;
 }
 
-#titulo-quadrado-1 {
+/* #titulo-quadrado-1 {
     margin-top: -10rem;
 }
 
@@ -325,7 +347,7 @@ main {
 }
 
 #titulo-quadrado-6{
-    font-size: 5rem;
+    font-size: 5.1rem;
     margin-top: -5rem;
 }
 
@@ -333,7 +355,7 @@ main {
     position: relative;
     left: -23rem;
     top: 2rem;
-}
+} */
 
 .linha2 {
     width: 100%;
@@ -344,7 +366,7 @@ main {
     margin-top: 5rem;
 }
 
-/* DEMONSTRAÇÃO */
+/* ================================================ DEMONSTRAÇÃO ==============================*/
 .demonstracao {
     grid-column: 1/13;
     grid-row: 17/21;
@@ -386,7 +408,7 @@ main {
     margin-top: 5rem;
 }
 
-/* VANTAGENS */
+/* ==============================================VANTAGENS=========================================== */
 
 .vantagens {
     grid-column: 1/13;
@@ -460,12 +482,13 @@ main {
     text-align: center;
 }
 
+/* ==============================================================RODAPÉ=========================================== */
 footer{
     grid-column: 1 / 13;
     grid-row: 27;
     background-color: black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     color: white;
 }
@@ -529,7 +552,7 @@ footer img{
 
 
 
-@media screen and ( max-width: 1400px){
+/* @media screen and ( max-width: 1400px){
     .quadrado{
         max-width: 35rem;
         max-height: 25rem;
@@ -540,4 +563,98 @@ footer img{
     .titulo-quadrado, #titulo-quadrado-2, #titulo-quadrado-3, #titulo-quadrado-4, #titulo-quadrado-5, #titulo-quadrado-6{
         font-size: 3rem;
     }
+} */
+
+@media screen and (max-width: 1280px){
+    main {
+        grid-row: 2/6;
+    }
+
+    .problema {
+        grid-row: 5/6;
+    }
+
+    .fundo-problema ul li {
+        font-size: 1.7rem;
+    }
+
+    .linha1 {
+        grid-row: 7/7;
+
+    }
+
+    .linha1,
+    .linha2,
+    .linha3 {
+        width: 85rem;
+        grid-column: 2/5;
+    }
+
+    .solucao {
+        grid-row: 8;
+    }
+
+/* TRANFERIR PARA OUTRO MEDIA QUERIE */
+    #titulo-solucao{
+        font-size: 3.8rem;
+        width: 120rem;
+    }
+
+    #sub-solucao{
+        font-size: 2rem;
+        width: 100rem;
+    }
+
+    .container-demonstracao h1{
+    font-size: 4rem;
 }
+
+.container-demonstracao h2{
+    font-size: 2.5rem;
+    text-align: center;
+    width: 110rem;
+}
+}
+
+@media screen and (max-width: 1275px) {
+    #menu-desktop {
+        display: none;
+    }
+
+    #menu-mobile {
+        background-color: #0000008c;
+        backdrop-filter: blur(1rem);
+        position: absolute;
+        left: 0;
+        top: 15rem;
+        width: 100%;
+        height: 100vh;
+        visibility: hidden;
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    #menu-mobile a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 2rem 3rem;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #menu-mobile a:hover {
+        background-color: #00000080;
+    }
+
+    #titulo-cabecalho{
+        display: none;
+    }
+
+    #titulo-cabecalho-mobile{
+        display: block;
+        color: var(--cor-texto-fundo-preto);
+        font-size: 4.5rem;
+    }
+}
+
