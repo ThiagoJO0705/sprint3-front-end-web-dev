@@ -68,7 +68,7 @@ header {
     background-color: #3a3a3a;
 }
 
-#menu-mobile{
+.menu-mobile{
     display: none;
 }
 
@@ -86,6 +86,19 @@ header {
     border-radius: 50%;
     margin: 1rem 0 1rem 2rem;
 }
+
+.box-menu-mobile{
+    display: none;
+}
+
+.linha1-menu,
+.linha2-menu,
+.linha3-menu{
+    width: 5.5rem;
+    height: 0.5rem;
+    background-color: white;
+}
+
 
 
 /* ==============================================HOME============================== */
@@ -620,21 +633,28 @@ footer img{
     #menu-desktop {
         display: none;
     }
+    
+    .open {
+        visibility: visible;
+    }
 
-    #menu-mobile {
+    .close {
+        visibility: hidden;
+    }
+
+    .menu-mobile {
         background-color: #0000008c;
         backdrop-filter: blur(1rem);
         position: absolute;
         left: 0;
-        top: 15rem;
-        width: 100%;
-        height: 100vh;
-        visibility: hidden;
+        top: 17rem;
+        width: 100%;    
         font-weight: bold;
-        z-index: 1;
+        z-index: 10;
+        display: block;
     }
 
-    #menu-mobile a {
+    .menu-mobile a {
         color: white;
         text-decoration: none;
         display: block;
@@ -643,7 +663,7 @@ footer img{
         text-align: center;
     }
 
-    #menu-mobile a:hover {
+    .menu-mobile a:hover {
         background-color: #00000080;
     }
 
@@ -656,5 +676,16 @@ footer img{
         color: var(--cor-texto-fundo-preto);
         font-size: 4.5rem;
     }
+
+    .box-menu-mobile{
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
 }
 
