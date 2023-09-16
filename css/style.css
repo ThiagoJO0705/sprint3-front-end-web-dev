@@ -25,6 +25,7 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(24, 170px);
+    color: var(--cor-texto-fundo-branco);
 }
 
 /* =========================================CABEÇALHO ====================================*/
@@ -60,7 +61,7 @@ header {
     list-style: none;
     font-size: 2rem;
     text-decoration: none;
-    color: var(--cor-texto);
+    color: var(--cor-texto-fundo-preto);
 
     
 }
@@ -74,7 +75,7 @@ header {
 }
 
 #titulo-cabecalho{
-    color: var(--cor-texto);
+    color: var(--cor-texto-fundo-preto);
     font-size: 4.5rem;
 }
 
@@ -119,7 +120,7 @@ main {
     background-image: url(../img/smart-cities.jpg);
     background-size: 100%;
     height: 1000px;
-    color: var(--cor-texto);
+    color: var(--cor-texto-fundo-preto);
     background-repeat: no-repeat;
     max-width: 100%;
 }
@@ -142,7 +143,7 @@ main {
 }
 
 .btn-projeto a {
-    color: var(--cor-texto);
+    color: var(--cor-texto-fundo-preto);
     text-decoration: none;
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.541);
@@ -161,12 +162,9 @@ main {
     grid-column: 1/13;
     gap: 10rem;
     display: flex;
-    /* flex-wrap: wrap; */
+
 }
 
-.container-problema {
-    color: var(--cor-texto-fundo-branco);
-}
 
 .fundo-problema {
     background-color: var(--cor-rosa);
@@ -227,7 +225,6 @@ main {
 }
 
 .container-solucao {
-    color: var(--cor-texto-fundo-branco);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
