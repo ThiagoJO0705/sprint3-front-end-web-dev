@@ -417,12 +417,10 @@ footer{
 .textos-rodape{
     display: flex;
     justify-content: space-between;
-    /* margin: 5rem; */
-    /* align-items: center; */
     font-size: 1rem;
 
 }
-.textos-rodape > div {
+.textos-rodape div {
     margin: 0 2rem; 
 }
 .titulos-rodape{
@@ -432,10 +430,7 @@ footer{
 footer img{
     max-width: 100%;
     max-height: 12rem;
-    /* height: 20vh; */
-    /* right: 5rem; */
-    /* display: flex; */
-    /* justify-content: center; */
+
 }
 .contatos{
     display: flex;
@@ -444,7 +439,7 @@ footer img{
     flex-direction: column;
     
 }
-.contatos > div{
+.contatos div{
     margin: 1rem 0;
 }
 .icons-rodape{
@@ -467,6 +462,20 @@ footer img{
     color: var(--cor-texto-fundo-preto);
     cursor: pointer;
 }
+
+.inicio,
+.sobre-nos,
+.suporte {
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio a,
+.sobre-nos a,
+.suporte a {
+    color: var(--cor-texto-fundo-preto);
+}
+
 
 
 
@@ -868,6 +877,10 @@ footer img{
         font-size: 2rem;
         width: 80rem;
     }
+
+    .problema {
+        margin-top: -18rem;
+    }
 }
 
 
@@ -941,14 +954,31 @@ footer img{
         grid-row: 20;
         margin-top: -5rem;
     }
+
+    .problema {
+        grid-row: 5;
+        margin-top: -12rem;
+    }
 }
+
+
 
 @media screen and (max-width: 768px) {
     .btn-projeto{
         position: relative;
-        top: 10rem;
+        top: 7.2rem;
+    }
+
+    .container-demonstracao h1{
+        width: 40rem;
+        font-size: 2.8rem;
+    }
+
+    .container-demonstracao h2{
+        width: 40rem;
     }
 }
+
 
 
 @media screen and (max-width: 660px) {
@@ -970,20 +1000,88 @@ footer img{
         font-size: 1.5rem;
         width: 40rem;
     }
+
+    #titulo-problema{
+        width: 40rem;
+    }
+
+    #sub-problema{
+        width: 40rem;
+
+    }
+
+    .video-yt {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .container-grid {
+        grid-template-rows: repeat(25, 170px);
+    }
+
+    footer {
+        grid-row: 25;
+    }
+
+    .vantagens {
+        grid-row: 21;
+    }
+
+    .demonstracao{
+        grid-row: 18;
+        margin-top: -20rem;
+    }
 }
-@media screen and (max-width: 617px) {
+
+
+
+@media screen and (max-width: 614px) {
     .fundo-problema ul li{
         font-size: 1.3rem;
     }
+
+    .container-grid {
+        grid-template-rows: repeat(31, 170px);
+    }
+
+    footer {
+        grid-row: 31;
+    }
+
+    .vantagens{
+        grid-row: 27;
+    }
+
+    .demonstracao{
+        grid-row: 24;
+    }
 }
+
+
+
 @media screen and (max-width: 550px) {
     
     #titulo-home{
         position: relative;
-        top: -2rem;
+        top: -7rem;
     }
     #sub-home{
         position: relative;
-        top: -2rem;
+        top: -8rem;
     }
+
+    .btn-projeto{
+        top: 2rem;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .container-grid {
+        grid-template-rows: repeat(34, 170px);
+    }
+
+    footer {
+        grid-row: 34;
+    }
+    
 }
