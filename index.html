@@ -18,13 +18,13 @@
             <h1 id="titulo-cabecalho-mobile">TPGN</h1>
             <nav id="menu-desktop">
                 <ul>
-                    <li><a href="#main">Home</a></li>
-                    <li><a href="#problema">Problema</a></li>
-                    <li><a href="#solucao">Solução</a></li>
-                    <li><a href="#demonstracao">Demonstração</a></li>
-                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a id="menu-main" href="#main">Home</a></li>
+                    <li><a id="menu-problema" href="#problema">Problema</a></li>
+                    <li><a id="menu-solucao" href="#solucao">Solução</a></li>
+                    <li><a id="menu-demonstracao" href="#demonstracao">Demonstração</a></li>
+                    <li><a id="menu-vantagens" href="#vantagens">Vantagens</a></li>
                 </ul>
-                <button class="login">Login</button>
+                <button class="login-btn">Login</button>
             </nav>
 
             <div class="box-menu-mobile">
@@ -47,6 +47,26 @@
             </nav>
 
         </header>
+        <section class="section-login">
+            <div class="login-box">
+                <img id="return" src="./img/return.png" alt="Seta de retorno">
+                <form action="" class="login" id="login">
+                    <h2>Login</h2>
+                    <div class="inputs-login">
+                        <label for="login-form">Login:</label>
+                        <input type="text" id="login-form" name="login-form" placeholder="Digite seu nome de usuário...">
+                    </div>
+                    <div class="inputs-login">
+                        <label for="senha-form">Senha:</label>
+                        <input type="password" id="senha-form" name="senha-form"  placeholder="Digite sua senha...">
+                        <span class="span-login">Usuário ou senha incorretos!</span>
+                    </div>
+                    <div class="inputs-login">
+                        <button class="botao-entrar-login" type="submit">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
 
         <main id="main">
             <div class="containeir-home">

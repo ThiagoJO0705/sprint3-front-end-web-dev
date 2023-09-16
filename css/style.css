@@ -102,6 +102,117 @@ header {
     transition: 0.5s;
 }
 
+/* ==============================LOGIN======================== */
+
+#return{
+    width: 5rem;
+    position: relative;
+    left: -19rem;
+    top: -5rem;
+    cursor: pointer;
+}
+
+.section-login {
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    min-height: 97rem;
+    width: 100%;
+    grid-column: 1/13;
+}
+
+.login-box{
+    width: 500px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #3a3a3a;
+    color: white;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.541) 1rem 1rem;
+    position: relative;
+    top: -10rem;
+}
+
+.login{
+    position: relative;
+    top: -10rem;
+}
+
+.login h2 {
+    font-size: 4rem;
+    position: relative;
+    top: -9rem;
+    left: 20rem;
+    text-shadow: black 0px 10px;
+}
+
+.inputs-login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inputs-login input {
+    background-color: transparent;
+    outline: none;
+    width: 40rem;
+    margin-top: 6rem;
+    height: 5rem;
+    color: white;
+    visibility: visible;
+    text-align: left;
+    vertical-align: top;
+    border-radius: 1rem;
+}
+.inputs-login label{
+    font-size: 2rem;
+    position: absolute;
+    margin-top: 3.6rem;
+    left: 5rem;
+}
+
+.inputs-login .botao-entrar-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 400px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 10rem;
+    cursor: pointer;
+}
+
+.span-login{
+    visibility: hidden;
+    font-size: 2rem;
+    color: red;
+    position: relative;
+    font-weight: bold;
+    top: 5rem;
+}
+
+.login-btn {
+    width: 8rem;
+    height: 4rem;
+    background-color: var(--cor-rosa);
+    font-size: 2rem;
+    border-radius: 1.2rem;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: -5rem;
+    left: -3rem;
+}
 
 
 /* ==============================================HOME============================== */
@@ -156,19 +267,7 @@ main {
     transition: 0.2s;
 }
 
-.login {
-    width: 8rem;
-    height: 4rem;
-    background-color: var(--cor-rosa);
-    font-size: 2rem;
-    border-radius: 1.2rem;
-    border: 2px solid white;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    top: -5rem;
-    left: -3rem;
-}
+
 
 /* ==================================PROBLEMA========================= */
 .problema {
