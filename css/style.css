@@ -943,6 +943,12 @@ footer img{
     }
 }
 
+@media screen and (max-width: 768px) {
+    .btn-projeto{
+        position: relative;
+        top: 10rem;
+    }
+}
 
 
 @media screen and (max-width: 660px) {
@@ -954,7 +960,30 @@ footer img{
         width: 40rem;
     }
 
-.solucao {
-    margin-left: 0;
+    .solucao {
+        margin-left: 0;
+    }
+    #titulo-home{
+        font-size: 3rem;
+    }
+    #sub-home{
+        font-size: 1.5rem;
+        width: 40rem;
+    }
 }
+@media screen and (max-width: 617px) {
+    .fundo-problema ul li{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    
+    #titulo-home{
+        position: relative;
+        top: -2rem;
+    }
+    #sub-home{
+        position: relative;
+        top: -2rem;
+    }
 }
