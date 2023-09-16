@@ -23,3 +23,9 @@ function showMenu() {
 
 const boxMenuMobile = document.querySelector(".box-menu-mobile");
 boxMenuMobile.addEventListener("click", showMenu)
+
+const mainMenu = document.querySelector("#menu-mobile-main");
+const problemaMenu = document.querySelector("#menu-mobile-problema");
+const solucaoMenu = document.querySelector("#menu-mobile-solucao");
+const demonstracaoMenu = document.querySelector("#menu-mobile-demonstracao");
+const vantagensMenu = document.querySelector("#menu-mobile-vantagens");
