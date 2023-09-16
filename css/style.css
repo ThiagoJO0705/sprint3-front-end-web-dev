@@ -730,6 +730,12 @@ footer img{
 
     .vantagens {
         grid-row: 19;
+        margin-top: 5rem;
+    }
+
+    #titulo-vantagens{
+        width: 100rem;
+        text-align: center;
     }
 
     #titulo-solucao{
@@ -821,27 +827,27 @@ footer img{
     }
 
     #box-numero2{
-        top: -6.5rem;
+        top: -5rem;
         left: -12rem;
     }
 
     #box-numero3{
-        top: -5.5rem;
+        top: -5rem;
         left: -12rem;
     }
     
     #box-numero4{
-        top: -7.5rem;
+        top: -6rem;
         left: -12rem;
     }
 
     #box-numero5{
-        top: -6.5rem;
+        top: -5rem;
         left: -12rem;
     }
 
     #box-numero6{
-        top: -7.5rem;
+        top: -6rem;
         left: -12rem;
     }
     
@@ -865,6 +871,45 @@ footer img{
 }
 
 
+
+@media screen and (max-width: 934px){
+    .container-grid {
+        grid-template-rows: repeat(23, 170px);
+    }
+
+    .demonstracao {
+        grid-row: 16;
+        margin-top: -5rem;
+    }
+
+    .vantagens{
+        grid-row: 19;
+        margin-top: 5rem;
+    }
+
+    .video-yt{
+        width: 60rem;
+
+    }
+
+    footer{
+        grid-row: 23;
+    }
+
+    .container-demonstracao h1{
+        font-size: 3rem;
+        width: 60rem;
+        text-align: center;
+    }
+    
+    .container-demonstracao h2{
+        font-size: 1.8rem;
+        width: 70rem;
+    }
+}
+
+
+
 @media screen and (max-width: 880px) {
     #titulo-solucao{
         width: 60rem;
@@ -875,9 +920,27 @@ footer img{
         width: 60rem;
     }
 
-.solucao {
-    margin-left: 0;
-}
+    .solucao {
+       margin-left: 0;
+    }
+
+    .container-grid {
+        grid-template-rows: repeat(24, 170px);
+    }
+
+    footer {
+        grid-row: 24;
+    }
+
+    .demonstracao{
+        grid-row: 17;
+        margin-top: -15rem;
+    }
+
+    .vantagens {
+        grid-row: 20;
+        margin-top: -5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -886,6 +949,7 @@ footer img{
         top: 10rem;
     }
 }
+
 
 @media screen and (max-width: 660px) {
     #titulo-solucao{
