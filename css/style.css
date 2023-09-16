@@ -26,6 +26,12 @@ html {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(24, 170px);
     color: var(--cor-texto-fundo-branco);
+    background-color: white;
+}
+
+.container-grid.dark{
+    background-color: rgb(59, 58, 58);
+    color: var(--cor-texto-fundo-preto);
 }
 
 /* =========================================CABEÇALHO ====================================*/
@@ -104,6 +110,37 @@ header {
 
 
 
+.tema{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    z-index: 9;
+    position: relative;
+    left: 68rem;
+    bottom: 1rem;
+
+}
+#label-tema{
+    background-color: black;
+    border-radius: 40%;
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.5s linear;
+    justify-content: center;
+    align-items: center;
+}
+.container-grid.dark #label-tema{
+    background-color: white;
+}
+#btn-tema{
+    visibility: hidden;
+}
+#label-tema img{
+    width: 3rem;
+    height: 3rem;
+}
 /* ==============================================HOME============================== */
 
 .containeir-home {
@@ -155,6 +192,9 @@ main {
     font-size: 2.2rem;
     transition: 0.2s;
 }
+
+
+
 
 /* ==================================PROBLEMA========================= */
 .problema {
