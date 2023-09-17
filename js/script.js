@@ -160,3 +160,27 @@ function login(event){
 
 const btnEntrarLogin = document.querySelector(".botao-entrar-login")
 btnEntrarLogin.addEventListener("click", login)
+
+// =============================== DARK MODE ===============================
+const btnTema = document.getElementById('btn-tema');
+const containerGrid = document.querySelector('.container-grid');
+const imagemTema = document.getElementById('imagem-tema');
+let modoEscuro = false;
+btnTema.addEventListener("click", () => {
+  if (!modoEscuro) {
+    modoEscuro = true;
+    containerGrid.classList.add("dark");
+    imagemTema.src = 'img/sol-icon-removebg-preview.png';
+    imagemTema.alt = 'sol(light-mode)';
+
+  } else {
+    modoEscuro = false;
+    containerGrid.classList.remove("dark");
+    imagemTema.src = 'img/lua-icon-removebg-preview.png';
+    imagemTema.alt = 'lua(dark-mode)';
+  }
+});
+=======
+const btnEntrarLogin = document.querySelector(".botao-entrar-login")
+btnEntrarLogin.addEventListener("click", login)
+
