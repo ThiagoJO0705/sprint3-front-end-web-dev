@@ -628,25 +628,6 @@ footer img{
 
 
 
-
-
-
-/* @media screen and ( max-width: 1400px){
-    .quadrado{
-        max-width: 35rem;
-        max-height: 25rem;
-    }
-    .quadrado h2{
-        font-size: 1.5rem;
-    }
-    .titulo-quadrado, #titulo-quadrado-2, #titulo-quadrado-3, #titulo-quadrado-4, #titulo-quadrado-5, #titulo-quadrado-6{
-        font-size: 3rem;
-    }
-} */
-
-
-
-
 @media screen and (max-width: 1684px){
     #sub-solucao{
         margin-top: 0;
